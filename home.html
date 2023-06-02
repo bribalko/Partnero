@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Partnero</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./css/style.min.css">
+	<link rel="shortcut icon" href="./favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- header -->
+		<header class="header">
+			<div class="header__container">
+				<div class="header__wrapper">
+					<a class="header__logo" href="../home.html">
+						<svg width="139" height="32" viewBox="0 0 139 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g clip-path="url(#clip0_1_487)">
+								<path d="M2.67281 5.3336H5.34562C11.2349 5.3336 16.0072 10.1104 16.0072 16C16.0072 21.8312 11.3296 26.5712 5.52204 26.6656L5.34562 26.6672V24C9.7562 24 13.3336 20.4192 13.3336 16C13.3336 11.6248 9.82757 8.072 5.47713 8.0008L5.34642 8H0V0H5.34642C14.2045 0 21.3849 7.1632 21.3849 16C21.3849 24.748 14.3472 31.8568 5.61186 31.9976L5.34642 32H0V18.6664H5.34642C6.82276 18.6664 8.01923 17.4728 8.01923 16C8.01923 14.552 6.86286 13.3736 5.421 13.3344L5.34642 13.3336H0V10.6672H5.34642C8.29799 10.669 10.6903 13.0555 10.692 16C10.6907 18.9093 8.35365 21.2813 5.43784 21.3328L5.34562 21.3336H2.67281V29.3336H5.34562C12.6402 29.332 18.5868 23.4969 18.7089 16.2208L18.7105 16C18.7089 8.7232 12.8602 2.79103 5.56695 2.6688L5.34562 2.6672H2.67281V5.3336ZM37.4233 9.3336C40.3755 9.33492 42.7684 11.7221 42.7698 14.6672C42.7685 17.5765 40.4314 19.9485 37.5156 20L37.4233 20.0008H34.7505V22.6672H32.0769V17.3336H32.0809L32.0769 14.0552L32.0849 9.3328L37.4233 9.3336ZM37.4233 12H34.7529L34.7505 15.2136L34.7529 17.3328H37.4233C38.85 17.3328 40.0152 16.2184 40.0921 14.8152L40.0954 14.7408L40.0962 14.6664C40.0962 13.2184 38.9398 12.04 37.4979 12.0008L37.4233 12ZM64.9558 9.3336C67.908 9.33492 70.3009 11.7221 70.3022 14.6672C70.3033 16.4485 69.4119 18.1125 67.9269 19.1016L69.368 22.6672H66.4794L65.3976 19.9824L65.1041 19.9984L64.9558 20H62.283V22.6664H59.6101V17.3328H59.6142L59.611 14.0552L59.619 9.3328L64.9558 9.3336ZM64.9558 12H62.2854L62.283 15.2136L62.2854 17.3328H64.9558C66.3824 17.3328 67.5476 16.2184 67.6246 14.8152L67.6278 14.7408L67.6286 14.6664C67.6286 13.2184 66.4722 12.04 65.0303 12.0008L64.9558 12ZM56.1346 22.6672H53.4618V19.9968L50.1755 20L48.1154 19.9968V22.6672H45.4426V14.6672C45.4439 11.7221 47.8368 9.33492 50.789 9.3336C53.7053 9.33489 56.083 11.6664 56.1346 14.5752L56.1354 14.6672L56.1346 22.6672ZM50.7882 12C49.3367 12 48.1555 13.1536 48.1162 14.592L48.1154 14.6664V17.3304L51.3367 17.3328L53.461 17.3304V14.6664C53.461 13.2432 52.3439 12.0808 50.9374 12.004L50.8628 12.0008L50.7882 12ZM100.24 22.6672V9.3336H108.26V12H102.913V14.6664H105.586V17.3328H102.913V20H108.26V22.6664L100.24 22.6672ZM117.616 9.3336C120.568 9.33492 122.961 11.7221 122.962 14.6672C122.963 16.4485 122.072 18.1125 120.587 19.1016L122.028 22.6672H119.14L118.058 19.9824L117.765 19.9984L117.616 20.0008H114.944V22.6672H112.269V17.3336H112.273L112.269 14.0552L112.277 9.3328L117.616 9.3336ZM117.616 12H114.945L114.943 15.2136L114.945 17.3328H117.616C119.042 17.3328 120.207 16.2184 120.284 14.8152L120.288 14.7408L120.288 14.6664C120.288 13.2184 119.132 12.04 117.69 12.0008L117.616 12ZM132.317 9.3336C128.627 9.3336 125.635 12.3184 125.635 16C125.635 19.6816 128.627 22.6664 132.317 22.6664C136.008 22.6664 139 19.6816 139 16C139 12.3184 136.008 9.3336 132.317 9.3336ZM132.317 12C134.532 12 136.327 13.7909 136.327 16C136.327 18.2091 134.532 20 132.317 20C130.103 20 128.308 18.2091 128.308 16C128.308 13.7909 130.103 12 132.317 12ZM82.8274 9.3336V12H78.8451V22.6664H76.1723V12H72.1891V9.3336H82.8274ZM88.4666 9.3328L88.4682 9.3336V9.3352L94.0816 17.8224V9.3336H96.7544V22.6672H94.0816V22.6584L88.4682 14.1648V22.6672H85.7953V9.3336H88.4657L88.4666 9.3328Z" fill="#082925" />
+							</g>
+							<defs>
+								<clipPath id="clip0_1_487">
+									<rect width="139" height="32" fill="white" />
+								</clipPath>
+							</defs>
+						</svg>
+					</a>
+					<div class="header__menu menu">
+						<button class="menu__icon icon-menu" type="button"><span></span></button>
+						<nav class="header__nav">
+							<ul class="header__list">
+								<li class="header__item"><a class="header__link" href="#">Features</a></li>
+								<li class="header__item"><a class="header__link" href="#">Affiliate</a></li>
+								<li class="header__item"><a class="header__link" href="#">Referral</a></li>
+								<li class="header__item"><a class="header__link" href="#">Pricing</a></li>
+
+							</ul>
+							<ul class="header-contact">
+								<li class="header-contact__item"><a class="header__btn-accent" href="#">Log in</a></li>
+								<li class="header-contact__item"><a class="header__btn" href="#">Sign up</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- main -->
+		<main class="page">
+			<!-- hero -->
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__wrapper">
+						<div class="hero__about">
+							<h1 class="hero__title">
+								Partnership programs tailor-made for your business
+							</h1>
+							<p class="hero__text">Tap into new revenue channels by running fully customized affiliate and referral programs.</p>
+							<button class="hero__btn">
+								Sign up now
+							</button>
+						</div>
+						<div class="hero__img">
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- cart -->
+			<section class="cart">
+				<div class="cart__container">
+					<div class="cart__wrapper">
+						<ul class="cart__menu">
+							<li class="cart__item">
+								<h2 class="cart__title">Affiliate programs</h2>
+								<p class="cart__text">Take control of every aspect of your affiliate programs including program terms, branded partner portal and email communications.</p>
+								<button class="cart__btn">Find out more</button>
+							</li>
+							<li class="cart__item">
+								<p class="cart__type">Beta</p>
+								<h2 class="cart__title">Referral programs</h2>
+								<p class="cart__text">Turn every customer into a partner with fully customizable reward setup and create and manage coupon codes.</p>
+								<button class="cart__btn">Find out more</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- about -->
+			<section class="about">
+				<div class="about__container">
+					<div class="about__wrapper">
+						<div class="about__img">
+							<picture><source srcset="img/rachel.webp" type="image/webp"><img src="img/rachel.png" alt="author"></picture>
+						</div>
+						<div class="about__content">
+							<h2 class="about__title">
+								Our goal was to streamline partnership management. With thousands of active affiliates, we were looking for a simplified workflow and more features for our partners.<a href="#" class="about__link">Read more</a>
+							</h2>
+							<h3 class="about__name-title">Rachel</h3>
+							<p class="about__text">Partnerships manager at MailerLite</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- features -->
+			<section class="features">
+				<div class="features__container">
+					<div class="features__wrapper">
+						<div class="features__about">
+							<h2 class="features__maintitle">Mission control for your partnerships</h2>
+							<p class="features__subtext">
+								Explore more features
+							</p>
+						</div>
+						<ul class="features__menu">
+							<li class="features__item">
+								<h3 class="features__title">
+									Multiple programs, one account
+								</h3>
+								<p class="features__text">Build as many unique programs as you need—all easily accessible and fully customizable from a single dashboard.</p>
+							</li>
+							<li class="features__item">
+								<h3 class="features__title">
+									Seamless partner experience
+								</h3>
+								<p class="features__text">
+									Partner portal that reminds partners they’re working with you. Use your colors, fonts, logo, and the layout style that best suits your brand - not ours.
+								</p>
+							</li>
+							<li class="features__item">
+								<h3 class="features__title">
+									Reporting and insights
+								</h3>
+								<p class="features__text">
+									See how well your partners are doing with program’s key performance indicators as well as data aggregated across all your programs.
+								</p>
+							</li>
+							<li class="features__item">
+								<h3 class="features__title">
+									Collaboration
+								</h3>
+								<p class="features__text">
+									Get your team onboard to help create and manage your partner programs.
+								</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- pricing -->
+			<section class="pricing">
+				<div class="pricing__container">
+					<div class="pricing__wrapper">
+						<div class="pricing__about">
+							<h2 class="pricing__title">Pricing</h2>
+							<p class="pricing__text">We believe pricing should be straightforward, fair and grow with your business. No limits on transactions, number of partners, or revenue.</p>
+						</div>
+						<ul class="pricing__cart">
+							<li class="pricing__item">
+								<h3 class="pricing__toptitle">Starter</h3>
+								<h2 class="pricing__title">$99<span>/mo</span></h2>
+								<button class="pricing__btn">Start trial</button>
+								<ul class="pricing-options__menu">
+									<li class="pricing-options__item">
+										<p class="pricing-options__text">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_1_593)">
+													<path d="M16.7358 12.6668L17.7375 13.2676C17.7993 13.3046 17.8504 13.357 17.886 13.4196C17.9215 13.4823 17.9401 13.5531 17.9401 13.6251C17.9401 13.6971 17.9215 13.7679 17.886 13.8306C17.8504 13.8932 17.7993 13.9456 17.7375 13.9826L10.4292 18.3676C10.2996 18.4455 10.1512 18.4866 10 18.4866C9.8488 18.4866 9.70044 18.4455 9.57083 18.3676L2.2625 13.9826C2.2007 13.9456 2.14955 13.8932 2.11404 13.8306C2.07852 13.7679 2.05985 13.6971 2.05985 13.6251C2.05985 13.5531 2.07852 13.4823 2.11404 13.4196C2.14955 13.357 2.2007 13.3046 2.2625 13.2676L3.26417 12.6668L10 16.7084L16.7358 12.6668ZM16.7358 8.7501L17.7375 9.35093C17.7993 9.38793 17.8504 9.44031 17.886 9.50296C17.9215 9.56562 17.9401 9.63641 17.9401 9.70843C17.9401 9.78045 17.9215 9.85125 17.886 9.9139C17.8504 9.97656 17.7993 10.0289 17.7375 10.0659L10 14.7084L2.2625 10.0659C2.2007 10.0289 2.14955 9.97656 2.11404 9.9139C2.07852 9.85125 2.05985 9.78045 2.05985 9.70843C2.05985 9.63641 2.07852 9.56562 2.11404 9.50296C2.14955 9.44031 2.2007 9.38793 2.2625 9.35093L3.26417 8.7501L10 12.7918L16.7358 8.7501ZM10.4283 1.09093L17.7375 5.47593C17.7993 5.51293 17.8504 5.56531 17.886 5.62796C17.9215 5.69062 17.9401 5.76141 17.9401 5.83343C17.9401 5.90545 17.9215 5.97625 17.886 6.0389C17.8504 6.10156 17.7993 6.15394 17.7375 6.19093L10 10.8334L2.2625 6.19093C2.2007 6.15394 2.14955 6.10156 2.11404 6.0389C2.07852 5.97625 2.05985 5.90545 2.05985 5.83343C2.05985 5.76141 2.07852 5.69062 2.11404 5.62796C2.14955 5.56531 2.2007 5.51293 2.2625 5.47593L9.57083 1.09093C9.70044 1.01306 9.8488 0.971924 10 0.971924C10.1512 0.971924 10.2996 1.01306 10.4292 1.09093H10.4283ZM10 2.77677L4.90583 5.83343L10 8.8901L15.0942 5.83343L10 2.77677Z" fill="black" />
+												</g>
+												<defs>
+													<clipPath id="clip0_1_593">
+														<rect width="20" height="20" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+											1 Program
+										</p>
+									</li>
+									<li class="pricing-options__item">
+										<p class="pricing-options__text">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_1_600)">
+													<path d="M3.33333 18.3333C3.33333 16.5651 4.03571 14.8694 5.28595 13.6192C6.5362 12.369 8.23189 11.6666 10 11.6666C11.7681 11.6666 13.4638 12.369 14.714 13.6192C15.9643 14.8694 16.6667 16.5651 16.6667 18.3333H15C15 17.0072 14.4732 15.7354 13.5355 14.7977C12.5979 13.86 11.3261 13.3333 10 13.3333C8.67392 13.3333 7.40215 13.86 6.46446 14.7977C5.52678 15.7354 5 17.0072 5 18.3333H3.33333ZM10 10.8333C7.2375 10.8333 5 8.59575 5 5.83325C5 3.07075 7.2375 0.833252 10 0.833252C12.7625 0.833252 15 3.07075 15 5.83325C15 8.59575 12.7625 10.8333 10 10.8333ZM10 9.16658C11.8417 9.16658 13.3333 7.67492 13.3333 5.83325C13.3333 3.99159 11.8417 2.49992 10 2.49992C8.15833 2.49992 6.66667 3.99159 6.66667 5.83325C6.66667 7.67492 8.15833 9.16658 10 9.16658Z" fill="black" />
+												</g>
+												<defs>
+													<clipPath id="clip0_1_600">
+														<rect width="20" height="20" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+											1 Team member
+										</p>
+									</li>
+								</ul>
+								<p class="pricing__features-title">Key features</p>
+								<ul class="pricing-features">
+									<li class="pricing-features__item">
+										<p class="pricing-features__text">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_1_608)">
+													<path d="M8.33333 12.6433L15.9933 4.98242L17.1725 6.16076L8.33333 14.9999L3.03 9.69659L4.20833 8.51826L8.33333 12.6433Z" fill="black" />
+												</g>
+												<defs>
+													<clipPath id="clip0_1_608">
+														<rect width="20" height="20" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+											Unlimited partners and transactions
+										</p>
+									</li>
+									<li class="pricing-features__item">
+										<p class="pricing-features__text">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_1_608)">
+													<path d="M8.33333 12.6433L15.9933 4.98242L17.1725 6.16076L8.33333 14.9999L3.03 9.69659L4.20833 8.51826L8.33333 12.6433Z" fill="black" />
+												</g>
+												<defs>
+													<clipPath id="clip0_1_608">
+														<rect width="20" height="20" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+											White-labeled partner portal
+										</p>
+									</li>
+									<li class="pricing-features__item">
+										<p class="pricing-features__text">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_1_608)">
+													<path d="M8.33333 12.6433L15.9933 4.98242L17.1725 6.16076L8.33333 14.9999L3.03 9.69659L4.20833 8.51826L8.33333 12.6433Z" fill="black" />
+												</g>
+												<defs>
+													<clipPath id="clip0_1_608">
+														<rect width="20" height="20" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+											Dashboard and data reports
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li class="pricing__item">
+								<h3 class="pricing__toptitle">Starter</h3>
+								<h2 class="pricing__title">$99<span>/mo</span></h2>
+								<button class="pricing__btn">Start trial</button>
+								<ul class="pricing-options__menu">
+									<li class="pricing-options__item">
+										<p class="pricing-options__text">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_1_593)">
+													<path d="M16.7358 12.6668L17.7375 13.2676C17.7993 13.3046 17.8504 13.357 17.886 13.4196C17.9215 13.4823 17.9401 13.5531 17.9401 13.6251C17.9401 13.6971 17.9215 13.7679 17.886 13.8306C17.8504 13.8932 17.7993 13.9456 17.7375 13.9826L10.4292 18.3676C10.2996 18.4455 10.1512 18.4866 10 18.4866C9.8488 18.4866 9.70044 18.4455 9.57083 18.3676L2.2625 13.9826C2.2007 13.9456 2.14955 13.8932 2.11404 13.8306C2.07852 13.7679 2.05985 13.6971 2.05985 13.6251C2.05985 13.5531 2.07852 13.4823 2.11404 13.4196C2.14955 13.357 2.2007 13.3046 2.2625 13.2676L3.26417 12.6668L10 16.7084L16.7358 12.6668ZM16.7358 8.7501L17.7375 9.35093C17.7993 9.38793 17.8504 9.44031 17.886 9.50296C17.9215 9.56562 17.9401 9.63641 17.9401 9.70843C17.9401 9.78045 17.9215 9.85125 17.886 9.9139C17.8504 9.97656 17.7993 10.0289 17.7375 10.0659L10 14.7084L2.2625 10.0659C2.2007 10.0289 2.14955 9.97656 2.11404 9.9139C2.07852 9.85125 2.05985 9.78045 2.05985 9.70843C2.05985 9.63641 2.07852 9.56562 2.11404 9.50296C2.14955 9.44031 2.2007 9.38793 2.2625 9.35093L3.26417 8.7501L10 12.7918L16.7358 8.7501ZM10.4283 1.09093L17.7375 5.47593C17.7993 5.51293 17.8504 5.56531 17.886 5.62796C17.9215 5.69062 17.9401 5.76141 17.9401 5.83343C17.9401 5.90545 17.9215 5.97625 17.886 6.0389C17.8504 6.10156 17.7993 6.15394 17.7375 6.19093L10 10.8334L2.2625 6.19093C2.2007 6.15394 2.14955 6.10156 2.11404 6.0389C2.07852 5.97625 2.05985 5.90545 2.05985 5.83343C2.05985 5.76141 2.07852 5.69062 2.11404 5.62796C2.14955 5.56531 2.2007 5.51293 2.2625 5.47593L9.57083 1.09093C9.70044 1.01306 9.8488 0.971924 10 0.971924C10.1512 0.971924 10.2996 1.01306 10.4292 1.09093H10.4283ZM10 2.77677L4.90583 5.83343L10 8.8901L15.0942 5.83343L10 2.77677Z" fill="black" />
+												</g>
+												<defs>
+													<clipPath id="clip0_1_593">
+														<rect width="20" height="20" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+											1 Program
+										</p>
+									</li>
+									<li class="pricing-options__item">
+										<p class="pricing-options__text">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_1_600)">
+													<path d="M3.33333 18.3333C3.33333 16.5651 4.03571 14.8694 5.28595 13.6192C6.5362 12.369 8.23189 11.6666 10 11.6666C11.7681 11.6666 13.4638 12.369 14.714 13.6192C15.9643 14.8694 16.6667 16.5651 16.6667 18.3333H15C15 17.0072 14.4732 15.7354 13.5355 14.7977C12.5979 13.86 11.3261 13.3333 10 13.3333C8.67392 13.3333 7.40215 13.86 6.46446 14.7977C5.52678 15.7354 5 17.0072 5 18.3333H3.33333ZM10 10.8333C7.2375 10.8333 5 8.59575 5 5.83325C5 3.07075 7.2375 0.833252 10 0.833252C12.7625 0.833252 15 3.07075 15 5.83325C15 8.59575 12.7625 10.8333 10 10.8333ZM10 9.16658C11.8417 9.16658 13.3333 7.67492 13.3333 5.83325C13.3333 3.99159 11.8417 2.49992 10 2.49992C8.15833 2.49992 6.66667 3.99159 6.66667 5.83325C6.66667 7.67492 8.15833 9.16658 10 9.16658Z" fill="black" />
+												</g>
+												<defs>
+													<clipPath id="clip0_1_600">
+														<rect width="20" height="20" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+											1 Team member
+										</p>
+									</li>
+								</ul>
+								<p class="pricing__features-title"></p>
+								<ul class="pricing-features">
+									<li class="pricing-features__item">
+										<p class="pricing-features__text">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_1_608)">
+													<path d="M8.33333 12.6433L15.9933 4.98242L17.1725 6.16076L8.33333 14.9999L3.03 9.69659L4.20833 8.51826L8.33333 12.6433Z" fill="black" />
+												</g>
+												<defs>
+													<clipPath id="clip0_1_608">
+														<rect width="20" height="20" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+											Unlimited partners and transactions
+										</p>
+									</li>
+									<li class="pricing-features__item">
+										<p class="pricing-features__text">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_1_608)">
+													<path d="M8.33333 12.6433L15.9933 4.98242L17.1725 6.16076L8.33333 14.9999L3.03 9.69659L4.20833 8.51826L8.33333 12.6433Z" fill="black" />
+												</g>
+												<defs>
+													<clipPath id="clip0_1_608">
+														<rect width="20" height="20" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+											White-labeled partner portal
+										</p>
+									</li>
+									<li class="pricing-features__item">
+										<p class="pricing-features__text">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_1_608)">
+													<path d="M8.33333 12.6433L15.9933 4.98242L17.1725 6.16076L8.33333 14.9999L3.03 9.69659L4.20833 8.51826L8.33333 12.6433Z" fill="black" />
+												</g>
+												<defs>
+													<clipPath id="clip0_1_608">
+														<rect width="20" height="20" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+											Dashboard and data reports
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li class="pricing__item">
+								<h3 class="pricing__toptitle">Starter</h3>
+								<h2 class="pricing__title">$99<span>/mo</span></h2>
+								<button class="pricing__btn">Start trial</button>
+								<ul class="pricing-options__menu">
+									<li class="pricing-options__item">
+										<p class="pricing-options__text">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_1_593)">
+													<path d="M16.7358 12.6668L17.7375 13.2676C17.7993 13.3046 17.8504 13.357 17.886 13.4196C17.9215 13.4823 17.9401 13.5531 17.9401 13.6251C17.9401 13.6971 17.9215 13.7679 17.886 13.8306C17.8504 13.8932 17.7993 13.9456 17.7375 13.9826L10.4292 18.3676C10.2996 18.4455 10.1512 18.4866 10 18.4866C9.8488 18.4866 9.70044 18.4455 9.57083 18.3676L2.2625 13.9826C2.2007 13.9456 2.14955 13.8932 2.11404 13.8306C2.07852 13.7679 2.05985 13.6971 2.05985 13.6251C2.05985 13.5531 2.07852 13.4823 2.11404 13.4196C2.14955 13.357 2.2007 13.3046 2.2625 13.2676L3.26417 12.6668L10 16.7084L16.7358 12.6668ZM16.7358 8.7501L17.7375 9.35093C17.7993 9.38793 17.8504 9.44031 17.886 9.50296C17.9215 9.56562 17.9401 9.63641 17.9401 9.70843C17.9401 9.78045 17.9215 9.85125 17.886 9.9139C17.8504 9.97656 17.7993 10.0289 17.7375 10.0659L10 14.7084L2.2625 10.0659C2.2007 10.0289 2.14955 9.97656 2.11404 9.9139C2.07852 9.85125 2.05985 9.78045 2.05985 9.70843C2.05985 9.63641 2.07852 9.56562 2.11404 9.50296C2.14955 9.44031 2.2007 9.38793 2.2625 9.35093L3.26417 8.7501L10 12.7918L16.7358 8.7501ZM10.4283 1.09093L17.7375 5.47593C17.7993 5.51293 17.8504 5.56531 17.886 5.62796C17.9215 5.69062 17.9401 5.76141 17.9401 5.83343C17.9401 5.90545 17.9215 5.97625 17.886 6.0389C17.8504 6.10156 17.7993 6.15394 17.7375 6.19093L10 10.8334L2.2625 6.19093C2.2007 6.15394 2.14955 6.10156 2.11404 6.0389C2.07852 5.97625 2.05985 5.90545 2.05985 5.83343C2.05985 5.76141 2.07852 5.69062 2.11404 5.62796C2.14955 5.56531 2.2007 5.51293 2.2625 5.47593L9.57083 1.09093C9.70044 1.01306 9.8488 0.971924 10 0.971924C10.1512 0.971924 10.2996 1.01306 10.4292 1.09093H10.4283ZM10 2.77677L4.90583 5.83343L10 8.8901L15.0942 5.83343L10 2.77677Z" fill="black" />
+												</g>
+												<defs>
+													<clipPath id="clip0_1_593">
+														<rect width="20" height="20" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+											1 Program
+										</p>
+									</li>
+									<li class="pricing-options__item">
+										<p class="pricing-options__text">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_1_600)">
+													<path d="M3.33333 18.3333C3.33333 16.5651 4.03571 14.8694 5.28595 13.6192C6.5362 12.369 8.23189 11.6666 10 11.6666C11.7681 11.6666 13.4638 12.369 14.714 13.6192C15.9643 14.8694 16.6667 16.5651 16.6667 18.3333H15C15 17.0072 14.4732 15.7354 13.5355 14.7977C12.5979 13.86 11.3261 13.3333 10 13.3333C8.67392 13.3333 7.40215 13.86 6.46446 14.7977C5.52678 15.7354 5 17.0072 5 18.3333H3.33333ZM10 10.8333C7.2375 10.8333 5 8.59575 5 5.83325C5 3.07075 7.2375 0.833252 10 0.833252C12.7625 0.833252 15 3.07075 15 5.83325C15 8.59575 12.7625 10.8333 10 10.8333ZM10 9.16658C11.8417 9.16658 13.3333 7.67492 13.3333 5.83325C13.3333 3.99159 11.8417 2.49992 10 2.49992C8.15833 2.49992 6.66667 3.99159 6.66667 5.83325C6.66667 7.67492 8.15833 9.16658 10 9.16658Z" fill="black" />
+												</g>
+												<defs>
+													<clipPath id="clip0_1_600">
+														<rect width="20" height="20" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+											1 Team member
+										</p>
+									</li>
+								</ul>
+								<p class="pricing__features-title"></p>
+								<ul class="pricing-features">
+									<li class="pricing-features__item">
+										<p class="pricing-features__text">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_1_608)">
+													<path d="M8.33333 12.6433L15.9933 4.98242L17.1725 6.16076L8.33333 14.9999L3.03 9.69659L4.20833 8.51826L8.33333 12.6433Z" fill="black" />
+												</g>
+												<defs>
+													<clipPath id="clip0_1_608">
+														<rect width="20" height="20" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+											Unlimited partners and transactions
+										</p>
+									</li>
+									<li class="pricing-features__item">
+										<p class="pricing-features__text">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_1_608)">
+													<path d="M8.33333 12.6433L15.9933 4.98242L17.1725 6.16076L8.33333 14.9999L3.03 9.69659L4.20833 8.51826L8.33333 12.6433Z" fill="black" />
+												</g>
+												<defs>
+													<clipPath id="clip0_1_608">
+														<rect width="20" height="20" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+											White-labeled partner portal
+										</p>
+									</li>
+									<li class="pricing-features__item">
+										<p class="pricing-features__text">
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<g clip-path="url(#clip0_1_608)">
+													<path d="M8.33333 12.6433L15.9933 4.98242L17.1725 6.16076L8.33333 14.9999L3.03 9.69659L4.20833 8.51826L8.33333 12.6433Z" fill="black" />
+												</g>
+												<defs>
+													<clipPath id="clip0_1_608">
+														<rect width="20" height="20" fill="white" />
+													</clipPath>
+												</defs>
+											</svg>
+											Dashboard and data reports
+										</p>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<a class="pricing__link" href="#">
+							Full pricing plan comparison
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.25 3.75L17.5 10M17.5 10L11.25 16.25M17.5 10H2.5" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- advertising -->
+			<div class="advertising">
+				<div class="advertising__container">
+					<div class="advertising__wrapper">
+						<h2 class="advertising__title">Start your free 60-day trial today</h2>
+						<a class="advertising__btn" href="#">Sign up</a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- footer -->
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__wrapper">
+					<div class="footer__content">
+						<div class="footer__about">
+							<a href="../home.html" class="footer__logo">
+								<svg width="139" height="32" viewBox="0 0 139 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_1_487)">
+										<path d="M2.67281 5.3336H5.34562C11.2349 5.3336 16.0072 10.1104 16.0072 16C16.0072 21.8312 11.3296 26.5712 5.52204 26.6656L5.34562 26.6672V24C9.7562 24 13.3336 20.4192 13.3336 16C13.3336 11.6248 9.82757 8.072 5.47713 8.0008L5.34642 8H0V0H5.34642C14.2045 0 21.3849 7.1632 21.3849 16C21.3849 24.748 14.3472 31.8568 5.61186 31.9976L5.34642 32H0V18.6664H5.34642C6.82276 18.6664 8.01923 17.4728 8.01923 16C8.01923 14.552 6.86286 13.3736 5.421 13.3344L5.34642 13.3336H0V10.6672H5.34642C8.29799 10.669 10.6903 13.0555 10.692 16C10.6907 18.9093 8.35365 21.2813 5.43784 21.3328L5.34562 21.3336H2.67281V29.3336H5.34562C12.6402 29.332 18.5868 23.4969 18.7089 16.2208L18.7105 16C18.7089 8.7232 12.8602 2.79103 5.56695 2.6688L5.34562 2.6672H2.67281V5.3336ZM37.4233 9.3336C40.3755 9.33492 42.7684 11.7221 42.7698 14.6672C42.7685 17.5765 40.4314 19.9485 37.5156 20L37.4233 20.0008H34.7505V22.6672H32.0769V17.3336H32.0809L32.0769 14.0552L32.0849 9.3328L37.4233 9.3336ZM37.4233 12H34.7529L34.7505 15.2136L34.7529 17.3328H37.4233C38.85 17.3328 40.0152 16.2184 40.0921 14.8152L40.0954 14.7408L40.0962 14.6664C40.0962 13.2184 38.9398 12.04 37.4979 12.0008L37.4233 12ZM64.9558 9.3336C67.908 9.33492 70.3009 11.7221 70.3022 14.6672C70.3033 16.4485 69.4119 18.1125 67.9269 19.1016L69.368 22.6672H66.4794L65.3976 19.9824L65.1041 19.9984L64.9558 20H62.283V22.6664H59.6101V17.3328H59.6142L59.611 14.0552L59.619 9.3328L64.9558 9.3336ZM64.9558 12H62.2854L62.283 15.2136L62.2854 17.3328H64.9558C66.3824 17.3328 67.5476 16.2184 67.6246 14.8152L67.6278 14.7408L67.6286 14.6664C67.6286 13.2184 66.4722 12.04 65.0303 12.0008L64.9558 12ZM56.1346 22.6672H53.4618V19.9968L50.1755 20L48.1154 19.9968V22.6672H45.4426V14.6672C45.4439 11.7221 47.8368 9.33492 50.789 9.3336C53.7053 9.33489 56.083 11.6664 56.1346 14.5752L56.1354 14.6672L56.1346 22.6672ZM50.7882 12C49.3367 12 48.1555 13.1536 48.1162 14.592L48.1154 14.6664V17.3304L51.3367 17.3328L53.461 17.3304V14.6664C53.461 13.2432 52.3439 12.0808 50.9374 12.004L50.8628 12.0008L50.7882 12ZM100.24 22.6672V9.3336H108.26V12H102.913V14.6664H105.586V17.3328H102.913V20H108.26V22.6664L100.24 22.6672ZM117.616 9.3336C120.568 9.33492 122.961 11.7221 122.962 14.6672C122.963 16.4485 122.072 18.1125 120.587 19.1016L122.028 22.6672H119.14L118.058 19.9824L117.765 19.9984L117.616 20.0008H114.944V22.6672H112.269V17.3336H112.273L112.269 14.0552L112.277 9.3328L117.616 9.3336ZM117.616 12H114.945L114.943 15.2136L114.945 17.3328H117.616C119.042 17.3328 120.207 16.2184 120.284 14.8152L120.288 14.7408L120.288 14.6664C120.288 13.2184 119.132 12.04 117.69 12.0008L117.616 12ZM132.317 9.3336C128.627 9.3336 125.635 12.3184 125.635 16C125.635 19.6816 128.627 22.6664 132.317 22.6664C136.008 22.6664 139 19.6816 139 16C139 12.3184 136.008 9.3336 132.317 9.3336ZM132.317 12C134.532 12 136.327 13.7909 136.327 16C136.327 18.2091 134.532 20 132.317 20C130.103 20 128.308 18.2091 128.308 16C128.308 13.7909 130.103 12 132.317 12ZM82.8274 9.3336V12H78.8451V22.6664H76.1723V12H72.1891V9.3336H82.8274ZM88.4666 9.3328L88.4682 9.3336V9.3352L94.0816 17.8224V9.3336H96.7544V22.6672H94.0816V22.6584L88.4682 14.1648V22.6672H85.7953V9.3336H88.4657L88.4666 9.3328Z" fill="#082925" />
+									</g>
+									<defs>
+										<clipPath id="clip0_1_487">
+											<rect width="139" height="32" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</a>
+							<p class="footer__text">
+								Partnership programs tailor-made for your business
+							</p>
+							<ul class="footer-social footer-social__menu">
+								<li class="footer-social__item">
+									<a class="footer-social__link" href="#">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_1_743)">
+												<path d="M5.78333 4.16652C5.78311 4.60855 5.60731 5.03239 5.29459 5.34479C4.98187 5.6572 4.55786 5.83258 4.11583 5.83236C3.67381 5.83214 3.24997 5.65633 2.93757 5.34361C2.62516 5.0309 2.44978 4.60688 2.45 4.16486C2.45022 3.72283 2.62603 3.29899 2.93875 2.98659C3.25146 2.67419 3.67547 2.4988 4.1175 2.49902C4.55953 2.49924 4.98336 2.67505 5.29577 2.98777C5.60817 3.30049 5.78356 3.7245 5.78333 4.16652ZM5.83333 7.06652H2.5V17.4999H5.83333V7.06652ZM11.1 7.06652H7.78333V17.4999H11.0667V12.0249C11.0667 8.97486 15.0417 8.69152 15.0417 12.0249V17.4999H18.3333V10.8915C18.3333 5.74986 12.45 5.94152 11.0667 8.46652L11.1 7.06652Z" fill="black" />
+											</g>
+											<defs>
+												<clipPath id="clip0_1_743">
+													<rect width="20" height="20" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+
+									</a>
+								</li>
+								<li class="footer-social__item">
+									<a class="footer-social__link" href="#">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g clip-path="url(#clip0_1_748)">
+												<path d="M18.4683 4.71327C17.8321 4.99468 17.1575 5.1795 16.4667 5.26161C17.1948 4.82613 17.7398 4.14078 18 3.33327C17.3167 3.73994 16.5675 4.02494 15.7867 4.17911C15.2622 3.61792 14.567 3.24574 13.8091 3.12043C13.0513 2.99511 12.2733 3.12368 11.5961 3.48615C10.9188 3.84862 10.3803 4.42468 10.0643 5.12477C9.7482 5.82486 9.67229 6.60976 9.84833 7.35744C8.46259 7.28798 7.10694 6.92788 5.8694 6.30049C4.63187 5.67311 3.5401 4.79248 2.665 3.71577C2.35524 4.24781 2.19246 4.85263 2.19333 5.46827C2.19333 6.67661 2.80833 7.74411 3.74333 8.36911C3.19001 8.35169 2.64886 8.20226 2.165 7.93327V7.9766C2.16517 8.78136 2.44364 9.56129 2.9532 10.1842C3.46277 10.807 4.17207 11.2345 4.96083 11.3941C4.44718 11.5333 3.90859 11.5538 3.38583 11.4541C3.60822 12.1468 4.04167 12.7526 4.62549 13.1867C5.20931 13.6208 5.91427 13.8614 6.64166 13.8749C5.91873 14.4427 5.09098 14.8624 4.20573 15.1101C3.32048 15.3577 2.3951 15.4285 1.4825 15.3183C3.07558 16.3428 4.93008 16.8867 6.82416 16.8849C13.235 16.8849 16.7408 11.5741 16.7408 6.96827C16.7408 6.81827 16.7367 6.66661 16.73 6.51827C17.4124 6.02508 18.0013 5.41412 18.4692 4.71411L18.4683 4.71327Z" fill="black" />
+											</g>
+											<defs>
+												<clipPath id="clip0_1_748">
+													<rect width="20" height="20" fill="white" />
+												</clipPath>
+											</defs>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<ul class="footer-menu footer__menu">
+							<li class="footer-menu__item">
+								<h4 class="footer-menu__title">Product</h4>
+								<ul class="footer-menu__contact footer-contact">
+									<li class="footer-contact__item">
+										<a class="footer-contact__link" href="#">Features</a>
+									</li>
+									<li class="footer-contact__item">
+										<a class="footer-contact__link" href="#">Affiliate</a>
+									</li>
+									<li class="footer-contact__item">
+										<a class="footer-contact__link" href="#">Partner portal</a>
+									</li>
+									<li class="footer-contact__item">
+										<a class="footer-contact__link" href="#">Referral</a>
+									</li>
+									<li class="footer-contact__item">
+										<a class="footer-contact__link" href="#">Pricing</a>
+									</li>
+								</ul>
+							</li>
+							<li class="footer-menu__item">
+								<h4 class="footer-menu__title">Company</h4>
+								<ul class="footer-menu__contact footer-contact">
+									<li class="footer-contact__item">
+										<a class="footer-contact__link" href="#">About</a>
+									</li>
+									<li class="footer-contact__item">
+										<a class="footer-contact__link" href="#">Contact us</a>
+									</li>
+									<li class="footer-contact__item">
+										<a class="footer-contact__link" href="#">Become a partner</a>
+									</li>
+									<li class="footer-contact__item">
+										<a class="footer-contact__link" href="#">Terms & Policies</a>
+									</li>
+								</ul>
+							</li>
+							<li class="footer-menu__item">
+								<h4 class="footer-menu__title">Resources</h4>
+								<ul class="footer-menu__contact footer-contact">
+									<li class="footer-contact__item">
+										<a class="footer-contact__link" href="#">Integrations</a>
+									</li>
+									<li class="footer-contact__item">
+										<a class="footer-contact__link" href="#">Knowledge base</a>
+									</li>
+									<li class="footer-contact__item">
+										<a class="footer-contact__link" href="#">Developers API</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__copyrigting footer-copyrigting">
+						<p class="footer-copyrigting__text">
+							&copy; 2023 Partnero. All rights reserved.
+						</p>
+						<a class="footer-copyrigting__link" href="#">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_1_776)">
+									<path d="M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.43886 5.26567 0.10758 11.8016 0.00161L12 0ZM12 17.25C11.1461 17.25 10.3085 17.3523 9.5014 17.5492L9.5524 17.8031C10.1634 20.7296 11.1927 22.5 12 22.5C12.9301 22.5 13.9161 20.5221 14.494 17.5486C13.6851 17.3508 12.8496 17.25 12 17.25ZM22.4736 12.7501L16.4923 12.7503C16.4096 16.7478 15.6668 20.2168 14.4651 22.2089C18.7908 21.1682 22.0734 17.4498 22.4615 12.9054L22.4736 12.7501ZM8.064 18.0131L7.9891 18.0429C6.9207 18.4845 5.92969 19.1022 5.05488 19.8747C6.3119 20.9845 7.8361 21.7974 9.5187 22.2051C8.9059 21.174 8.4155 19.7404 8.064 18.0131ZM14.9913 12.7504L1.52638 12.7501C1.68888 15.0522 2.59347 17.1493 4.00237 18.8038C6.181 16.8537 9.0041 15.75 12 15.75C12.9303 15.75 13.8468 15.856 14.7364 16.0635C14.8741 15.0328 14.964 13.918 14.9913 12.7504ZM9.5349 1.79112L9.4767 1.80516C5.13073 2.87722 1.85052 6.6557 1.52636 11.2502L7.5077 11.2501C7.5904 7.2524 8.3332 3.78323 9.5349 1.79112ZM19.998 5.19653L19.8629 5.31531C17.6997 7.1937 14.9315 8.25 12 8.25C11.0699 8.25 10.1534 8.144 9.2636 7.9364C9.1259 8.967 9.036 10.0821 9.0087 11.25L22.4736 11.2502C22.316 9.0159 21.4593 6.9746 20.1209 5.34366L19.998 5.19653ZM12 1.5C11.0698 1.5 10.0838 3.47807 9.506 6.4517C10.3151 6.6493 11.1506 6.75 12 6.75C12.8539 6.75 13.6915 6.6478 14.499 6.4508L14.4424 6.1719C13.8306 3.25936 12.8045 1.5 12 1.5ZM14.481 1.79481L14.5352 1.88801C15.1231 2.91145 15.5949 4.31108 15.9361 5.98735C17.0324 5.54445 18.0492 4.9162 18.9454 4.12491C17.6883 3.01561 16.1638 2.20249 14.481 1.79481Z" fill="#021412" />
+								</g>
+								<defs>
+									<clipPath id="clip0_1_776">
+										<rect width="24" height="24" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+							We're part of The Remote Company
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<!-- script -->
+	<script src="js/app.min.js?_v=20230602104528"></script>
+</body>
+
+</html>
